@@ -1,12 +1,10 @@
 ﻿// NUnit 3 tests
 // See documentation : https://github.com/nunit/docs/wiki/NUnit-Documentation
-using System.Collections;
-using System.Collections.Generic;
-using BID.SWE.EXAM.Impl;
-using NUnit.Framework;
-
 namespace UniTTestExam
 {
+    using BID.SWE.EXAM.Impl;
+    using NUnit.Framework;
+
     [TestFixture]
     public class Exercise2Test
     {

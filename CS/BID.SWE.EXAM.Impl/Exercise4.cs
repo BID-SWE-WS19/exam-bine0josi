@@ -21,7 +21,21 @@ namespace BID.SWE.EXAM.Impl
 
         public object Method2(object obj)
         {
-            return null;
+            MemoryStream mem = (MemoryStream)obj;
+            StreamReader reader = new StreamReader(mem);
+
+            while (reader.EndOfStream)
+            {
+                string line = reader.ReadLine();
+
+                /// I dont know if it is always the third entry, so I decided to check
+                if (!int.TryParse(line, out int value) && line != "true" && line != "false")
+                {
+                    return line;
+                }
+            }
+
+            return string.Empty;
         }
     }
 }
