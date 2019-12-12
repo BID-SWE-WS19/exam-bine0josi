@@ -20,13 +20,11 @@ namespace UniTTestExam
         [Test]
         public void TestIfInstanceIsCellPrinter()
         {
-            /// sorry for awful test, could not imagen any better one, sorry....
-            try
+            if (ex1.Method1().GetType() == typeof(CellPrinter))
             {
-                CellPrinter print = ex1.Method1() as CellPrinter;
                 Assert.IsTrue(true);
             }
-            catch (System.Exception)
+            else
             {
                 Assert.IsTrue(false);
             }

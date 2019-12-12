@@ -20,12 +20,11 @@ namespace UniTTestExam
         [Test]
         public void Method1TestIfReturnIsMyMap()
         {
-            try
+            if (this.ex3.Method1().GetType() == typeof(MyMap))
             {
-                MyMap print = ex3.Method1() as MyMap;
                 Assert.IsTrue(true);
             }
-            catch (System.Exception)
+            else
             {
                 Assert.IsTrue(false);
             }
@@ -34,15 +33,20 @@ namespace UniTTestExam
         [Test]
         public void Method1TestIfReturnIsSomethingElse()
         {
-            try
+            if (ex3.Method1().GetType() != typeof(MyMap))
             {
-                CellPrinter print = ex3.Method1() as CellPrinter;
                 Assert.IsTrue(false);
             }
-            catch (System.Exception)
+            else
             {
                 Assert.IsTrue(true);
             }
+        }
+
+        [Test]
+        public void Method2TestIfReturnIsNotNull()
+        {
+            Assert.IsNotNull(ex3.Method2());
         }
     }
 }

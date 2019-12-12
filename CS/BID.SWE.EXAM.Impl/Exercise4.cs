@@ -21,7 +21,7 @@ namespace BID.SWE.EXAM.Impl
 
         public object Method2(object obj)
         {
-            MemoryStream stream = 
+            return null;
         }
     }
 }
