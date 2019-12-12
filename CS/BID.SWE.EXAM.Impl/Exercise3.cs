@@ -7,13 +7,18 @@ namespace BID.SWE.EXAM.Impl
     {
         public object Method1()
         {
-            throw new NotImplementedException();
+            return new MyMap();
         }
 
         public object Method2()
         {
             /// zwei klassen eine überklasse 
-            throw new NotImplementedException();
+            Bewegung[] bewegung = new Bewegung[2];
+
+            bewegung[0] = new Laufen();
+            bewegung[1] = new Springen();
+
+            return bewegung;
         }
 
     }
