@@ -3,6 +3,10 @@ using BID.SWE1.Exam.Interfaces;
 
 namespace BID.SWE.EXAM.Impl
 {
+    /// <summary>
+    ///  eigene Klasse davon, Methode überschreiben (grow)
+    /// </summary>
+    /// <seealso cref="BID.SWE1.Exam.Interfaces.IExercise2" />
     public class Exercise2 : IExercise2
     {
         public object Method1()

@@ -7,7 +7,8 @@ namespace BID.SWE.EXAM.Impl
     {
         public object Method1()
         {
-            throw new NotImplementedException();
+            // gibt implementiertes interface zurück
+            return new CellPrinter();
         }
     }
 }
